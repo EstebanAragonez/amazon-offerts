@@ -6,7 +6,7 @@ This project consists of a system that performs web scraping to obtain daily off
 
 - **Web Scraping**: Utilizes web scraping techniques to extract daily offers from Amazon.
 - **Database**: Stores the obtained offers in a database for later querying.
-- **Frontend**: Displays daily offers from Amazon in an intuitive and easy-to-navigate manner.
+- **Frontend**: Displays daily offers from Amazon in an intuitive and easy-to-navigate manner
 
 ## Technologies Used
 
