@@ -59,3 +59,8 @@ testem.log
 Thumbs.db
 
 env
+__pycache__
+*.py[cod]
+*$py.class
+*.pyc
+*.cpython-39.pyc
