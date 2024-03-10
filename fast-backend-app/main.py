@@ -7,4 +7,4 @@ Base.metadata.create_all(bind=engine)
 
 @app.get('/')
 def index():
-    return 'hola mundo'
+    return {'hola': 'mundo'}
