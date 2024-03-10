@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    depends_on:
+      - db
+    volumes:
+      - ./:/code:ro
+    environment:
+      - DATABASE_URL=postgresql://postgres:0000@db:5432/amazon
+    ports:
+      - "8000:80"
+
+  db:
+    image: postgres:15-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5434:5432"  # Map the container's 5432 to host's 5434
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=0000
+      - POSTGRES_DB=amazon
+
+volumes:
+  postgres_data:
